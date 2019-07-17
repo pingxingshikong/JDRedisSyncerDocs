@@ -12,6 +12,7 @@ name | 原生Redis |  京东云Redis单实例
 maxmemory | 0（无限制） | 未知 |
 maxmemory-policy | volatile-lru | volatile-lru |
 
+
 ### 4.1.1.3. 启动Redis数据迁移与同步任务 
 #### 4.1.1.3.1）. 请求地址（POST）JSON格式 
     http://xxxxx.com/sync/startSync
