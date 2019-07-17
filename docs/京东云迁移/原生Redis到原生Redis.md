@@ -1,14 +1,14 @@
 
 ### 4.1.2.1. 环境描述 
-    name | 原生Redis |  原生Redis
-    -|-|-
-    服务器配置 |京东云服务器2核8G | 京东云服务器2核8G  |
-    redis 版本 |  4.0.11          |   4.0.11 |
+name | 原生Redis |  原生Redis
+-|-|-
+服务器配置 |京东云服务器2核8G | 京东云服务器2核8G  |
+redis 版本 |  4.0.11          |   4.0.11 |
 ### 4.1.2.2. Redis配置 
-    name | 原生Redis |  原生Redis
-    -|-|-
-    maxmemory | 0（无限制） |  0（无限制） |
-    maxmemory-policy | volatile-lru | volatile-lru |
+name | 原生Redis |  原生Redis
+-|-|-
+maxmemory | 0（无限制） |  0（无限制） |
+maxmemory-policy | volatile-lru | volatile-lru |
 
 ### 4.1.2.3. 启动Redis数据迁移与同步任务 
 #### 4.1.2.3.1）. 请求地址（POST）JSON格式 
