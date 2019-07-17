@@ -1,19 +1,19 @@
 
-### 1. 环境描述 
+### 4.1.2.1. 环境描述 
     name | 原生Redis |  原生Redis
     -|-|-
     服务器配置 |京东云服务器2核8G | 京东云服务器2核8G  |
     redis 版本 |  4.0.11          |   4.0.11 |
-### 2. Redis配置 
+### 4.1.2.2. Redis配置 
     name | 原生Redis |  原生Redis
     -|-|-
     maxmemory | 0（无限制） |  0（无限制） |
     maxmemory-policy | volatile-lru | volatile-lru |
 
-### 3. 启动Redis数据迁移与同步任务 
-#### 3.1）. 请求地址（POST）JSON格式 
+### 4.1.2.3. 启动Redis数据迁移与同步任务 
+#### 4.1.2.3.1）. 请求地址（POST）JSON格式 
     http://xxxxx.com/sync/startSync
-#### 3.2）. 请求参数 
+#### 4.1.2.3.2）. 请求参数 
     （maxPoolSize请设置小于redis-server允许连接的客户端数量）
     请求头：
     Content-Type:application/json;charset=utf-8;
@@ -49,7 +49,7 @@
         "code": "200"
     }
 
-### 4. 测试
+### 4.1.2.4. 测试
     使用benchmark往原生Redis内插入大量数据测试迁移同步效果
     
     benchmark命令行：
